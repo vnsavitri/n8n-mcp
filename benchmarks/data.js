@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1754523062438,
+  "lastUpdate": 1756774387243,
   "repoUrl": "https://github.com/vnsavitri/n8n-mcp",
   "entries": {
     "n8n-mcp Benchmarks": [
@@ -52,6 +52,58 @@ window.BENCHMARK_DATA = {
             "unit": "ms",
             "range": 0.3116,
             "extra": "15097 ops/sec"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "56956555+czlonkowski@users.noreply.github.com",
+            "name": "Romuald Członkowski",
+            "username": "czlonkowski"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "cac43ed3843e100c7a225a5519510c8f8d296595",
+          "message": "Merge pull request #155 from czlonkowski/update-n8n-dependencies\n\nchore: update n8n dependencies to v1.107.4",
+          "timestamp": "2025-08-20T19:53:10+02:00",
+          "tree_id": "22242f23b6c77f2ac5d007164e37e81514fa536c",
+          "url": "https://github.com/vnsavitri/n8n-mcp/commit/cac43ed3843e100c7a225a5519510c8f8d296595"
+        },
+        "date": 1756774386978,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "sample - array sorting - small",
+            "value": 0.0187,
+            "unit": "ms",
+            "range": 0.2813,
+            "extra": "53424 ops/sec"
+          },
+          {
+            "name": "sample - array sorting - large",
+            "value": 3.2521,
+            "unit": "ms",
+            "range": 1.6578,
+            "extra": "308 ops/sec"
+          },
+          {
+            "name": "sample - string concatenation",
+            "value": 0.0047,
+            "unit": "ms",
+            "range": 0.2799,
+            "extra": "213634 ops/sec"
+          },
+          {
+            "name": "sample - object creation",
+            "value": 0.0668,
+            "unit": "ms",
+            "range": 0.40779999999999994,
+            "extra": "14962 ops/sec"
           }
         ]
       }
