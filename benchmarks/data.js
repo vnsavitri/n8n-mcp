@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757988642595,
+  "lastUpdate": 1757992519026,
   "repoUrl": "https://github.com/vnsavitri/n8n-mcp",
   "entries": {
     "n8n-mcp Benchmarks": [
@@ -208,6 +208,58 @@ window.BENCHMARK_DATA = {
             "range": "0.3944",
             "unit": "ms",
             "extra": "14426 ops/sec"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "vnsavitri@users.noreply.github.com",
+            "name": "Viv",
+            "username": "vnsavitri"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "ca5acb1e3e57ce1aae5654199e3d68c4df466d00",
+          "message": "fix: add diagnostics and native build fixes to CI",
+          "timestamp": "2025-09-16T13:13:31+10:00",
+          "tree_id": "d62909cca16463285e4c4d554191488476586bb0",
+          "url": "https://github.com/vnsavitri/n8n-mcp/commit/ca5acb1e3e57ce1aae5654199e3d68c4df466d00"
+        },
+        "date": 1757992518254,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "sample - array sorting - small",
+            "value": 0.0195,
+            "range": "0.33430000000000004",
+            "unit": "ms",
+            "extra": "51344 ops/sec"
+          },
+          {
+            "name": "sample - array sorting - large",
+            "value": 3.1834,
+            "range": "1.3365",
+            "unit": "ms",
+            "extra": "314 ops/sec"
+          },
+          {
+            "name": "sample - string concatenation",
+            "value": 0.0046,
+            "range": "0.2713",
+            "unit": "ms",
+            "extra": "215931 ops/sec"
+          },
+          {
+            "name": "sample - object creation",
+            "value": 0.0664,
+            "range": "0.4214",
+            "unit": "ms",
+            "extra": "15063 ops/sec"
           }
         ]
       }
