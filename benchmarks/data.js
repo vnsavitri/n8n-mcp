@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1757330727826,
+  "lastUpdate": 1757988642595,
   "repoUrl": "https://github.com/vnsavitri/n8n-mcp",
   "entries": {
     "n8n-mcp Benchmarks": [
@@ -156,6 +156,58 @@ window.BENCHMARK_DATA = {
             "range": "0.356",
             "unit": "ms",
             "extra": "14953 ops/sec"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "56956555+czlonkowski@users.noreply.github.com",
+            "name": "Romuald Członkowski",
+            "username": "czlonkowski"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "469cc1720dc5ec1f0a6ae67193b9a0d177cea109",
+          "message": "Merge pull request #195 from czlonkowski/templates-update\n\nSummary\nAdded optional fields parameter to search_templates tool to allow selective field filtering\nReduces response size by 70-98% when requesting only specific fields (e.g., just id and name)\nMaintains full backward compatibility - all existing calls continue to work unchanged\nChanges\nUpdated tool definition with new fields parameter\nModified template service to support partial responses\nUpdated tool documentation with examples\nBumped version to 2.11.1\nBenefits\n98% reduction in response size when requesting only id/name fields\n70% reduction when including description\nSignificantly reduces token usage for AI agents\nMaintains backward compatibility\nTest Results\n✅ All unit tests passing\n✅ All integration tests passing\n✅ TypeScript linting successful\n✅ Manual testing confirmed 98% size reduction",
+          "timestamp": "2025-09-16T00:02:23+02:00",
+          "tree_id": "528f7b1116916eaa2276dbe54736be2553b44348",
+          "url": "https://github.com/vnsavitri/n8n-mcp/commit/469cc1720dc5ec1f0a6ae67193b9a0d177cea109"
+        },
+        "date": 1757988641918,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "sample - array sorting - small",
+            "value": 0.0209,
+            "range": "0.4232",
+            "unit": "ms",
+            "extra": "47815 ops/sec"
+          },
+          {
+            "name": "sample - array sorting - large",
+            "value": 3.2283,
+            "range": "0.6409000000000002",
+            "unit": "ms",
+            "extra": "310 ops/sec"
+          },
+          {
+            "name": "sample - string concatenation",
+            "value": 0.0046,
+            "range": "0.2691",
+            "unit": "ms",
+            "extra": "216219 ops/sec"
+          },
+          {
+            "name": "sample - object creation",
+            "value": 0.0693,
+            "range": "0.3944",
+            "unit": "ms",
+            "extra": "14426 ops/sec"
           }
         ]
       }
